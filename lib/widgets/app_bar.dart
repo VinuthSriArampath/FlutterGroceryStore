@@ -16,6 +16,7 @@ Widget AppBarLeading = Padding(
   ),
 );
 
+
 Widget AppBarTitle = Column(
   crossAxisAlignment: CrossAxisAlignment.start,
   children: [
@@ -35,6 +36,7 @@ Widget AppBarTitle = Column(
     )
   ],
 );
+
 
 List<Widget> ? AppBarActions = [  // ? to indicate that it can be nullable
   Padding(
