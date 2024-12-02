@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_grocery_store/pages/home_page/widgets/home_page_titles.dart';
+import 'package:flutter_grocery_store/widgets/shared/page_titles.dart';
 import 'package:flutter_grocery_store/pages/home_page/widgets/search_bar.dart';
 import 'package:flutter_grocery_store/widgets/app_bar.dart';
-import 'package:flutter_grocery_store/widgets/reusable_widgets/category_card.dart';
-import 'package:flutter_grocery_store/widgets/reusable_widgets/product_card.dart';
+import 'package:flutter_grocery_store/widgets/reusable_widgets/home_page/category_card.dart';
+import 'package:flutter_grocery_store/widgets/reusable_widgets/home_page/product_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              HomePageTitles(title: "Explore Categories"),
+              PageTitles(title: "Explore Categories"),
               SizedBox(
                 height: 10,
               ),
@@ -80,7 +80,27 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              HomePageTitles(title: "For Sale and Low Cost"),
+              PageTitles(title: "For Sale and Low Cost"),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ProductCard(
+                    title: "Washing Liquid",
+                    price: 230,
+                    quantity: 200,
+                    qtyType: "ml",
+                  ),
+                  ProductCard(
+                    title: "Coffee and Tea",
+                    price: 100,
+                    qtyType: "g",
+                    quantity: 30,
+                  )
+                ],
+              ),
               SizedBox(
                 height: 10,
               ),

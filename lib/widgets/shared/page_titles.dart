@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class HomePageTitles extends StatelessWidget {
+class PageTitles extends StatelessWidget {
   final String title;
-  const HomePageTitles({super.key, required this.title});
+  const PageTitles({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
